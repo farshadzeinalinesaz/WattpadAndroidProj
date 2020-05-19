@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface IStoryApi {
-    @GET(value = "stories?fields=stories(id,title,cover,user)&filter=new")
+    @GET(value = "url?fields=some_params(param1,param2,param3,param3)&filter=flag")
     fun getAllStories(@Query(value = "offset") offset: Int, @Query(value = "limit") limit: Int): Call<StoryList>?
 }

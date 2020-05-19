@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ServerApiManager() {
     private var retrofit: Retrofit? = null
-    private val baseUrl: String = "https://www.wattpad.com/api/v3/";
+    private val baseUrl: String = "https://your_base_url";
 
     init {
         val gson: Gson = GsonBuilder().setLenient().create()
